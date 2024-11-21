@@ -32,7 +32,7 @@ const App = () => {
         const dataArray = inputData.split(',').map(item => item.trim());
 
         try {
-            const res = await axios.post('http://localhost:5000/bfhl', {
+            const res = await axios.post('https://bajaj-project-nine.vercel.app/bfhl', {
                 data: dataArray,
                 file_b64: file
             });
